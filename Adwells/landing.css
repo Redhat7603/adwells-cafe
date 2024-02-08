@@ -1,0 +1,172 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    background: #000;
+    width: 100%;
+    color: white;
+    display: flex;
+    position: fixed;
+    border-bottom: 2px solid #ffff;
+    justify-content: space-between;
+}
+.container h1{
+    font-size: 3rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+}
+
+.container .sear input{
+    margin-top: 15px;
+    height: 40px;
+    width: 40vh;
+    border-radius: 25px 0px 0px 25px;
+    padding-left: 20px;
+    outline: none;
+}
+.container .sear input:focus{
+    background: #bef5ff;
+}
+.container .sear button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: 2px solid black;
+    margin-top: 15px;
+    height: 6.1vh;
+    width: 40px;
+    position: absolute;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.container .sear button:hover{
+    background: #ff7b5b;
+    cursor: pointer;
+}
+
+.container .rgt{
+    justify-content: right;
+    padding-right: 20px;
+}
+.container .rgt p {
+    list-style: none;
+    display: flex;
+    margin-top: 30px;
+}
+.container .rgt a{
+    text-decoration: none;
+    color: #ffff;
+    padding-left: 60px;
+    
+}
+/* .right p{
+    text-align: right;
+    padding-left: 70px;
+    font-weight: bold;
+} */
+.rgt p a:hover{
+    cursor: pointer;
+    text-shadow: aqua;
+    font-size: larger;
+}
+
+
+#home{
+    color: white;
+    height: 100vh;
+    width: 100%;
+    background-image: url(asdd.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+}
+
+#home .text{
+    float: right;
+    margin:140px 50px 0px 0px;
+    font-size: 29px;
+}
+
+.button{
+    margin-top: 5px;
+    margin-left: 150px;
+   
+}
+.button button{
+    height: 37px;
+    width: 110px;
+    background: #e0b046;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.button button:hover{
+    cursor: pointer;
+    background: white;
+    color: green;
+}
+
+.menu1{
+    display: flex;
+    justify-content: space-between;
+}
+.menu1 .coffee{
+    margin-left: 50px;
+    margin-top: 60px;
+    font-size:2rem;
+}
+.menu1 .coffee p{
+    margin-top: 10px;
+}
+
+#menu{
+    margin-top: 30px;
+    color: #000000;
+    text-align: center;
+}
+#menu h1{
+    text-decoration: underline overline double rgb(2, 2, 7) 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.item{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.item img{
+    height: 400px;
+    width: 400px;
+}
+
+#about{
+    padding: 28px 35px 10px 35px;
+}
+#about h1{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#about p{
+    padding-top: 10px;
+    font-size: 2rem;
+}
+
+#contact{
+    color: grey;
+    background: #000;
+    padding: 15px 40px 15px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 1.3rem;
+}
+
+.copy p{
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    background: #000;
+    color: white;
+}

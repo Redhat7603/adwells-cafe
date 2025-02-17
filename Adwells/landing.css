@@ -4,73 +4,103 @@
     padding: 0;
 }
 
+/* Global Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-.container{
+/* Navbar Container */
+.container {
     background: #000;
     width: 100%;
     color: white;
     display: flex;
-    position: fixed;
-    border-bottom: 2px solid #ffff;
+    align-items: center;
     justify-content: space-between;
-}
-.container h1{
-    font-size: 3rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 10px;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    border-bottom: 2px solid white;
+    flex-wrap: wrap;
 }
 
-.container .sear input{
-    margin-top: 15px;
-    height: 40px;
-    width: 40vh;
-    border-radius: 25px 0px 0px 25px;
-    padding-left: 20px;
+/* Logo Styling */
+.logo {
+    font-size: 2.5rem;
+    font-family: "Bungee Spice", cursive;
+    margin: 0;
+}
+
+/* Search Box */
+.sear {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 5px;
+    width: 350px;
+    background: white;
+}
+
+/* Search Icon */
+.sear .search-icon {
+    font-size: 1.2rem;
+    margin: 0 10px;
+}
+
+/* Input Field */
+.sear input {
+    flex: 1;
+    border: none;
     outline: none;
+    font-size: 1rem;
+    padding: 5px;
+    background: transparent;
 }
-.container .sear input:focus{
-    background: #bef5ff;
+
+/* Search Button */
+.sear button {
+    background: rgb(231, 21, 21);
+    color: white;
+    border: none;
+    padding: 5px 25px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
 }
-.container .sear button{
+
+/* Hover Effect */
+.sear button:hover {
+    background: gray;
+}
+
+/* Navbar Links */
+.navbar{
+    margin-right: 60px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
     font-size: 1.2rem;
     font-weight: bold;
-    border: 2px solid black;
-    margin-top: 15px;
-    height: 6.1vh;
-    width: 40px;
-    position: absolute;
-    border-radius: 0px 20px 20px 0px;
+    transition: 0.3s;
 }
 
-.container .sear button:hover{
-    background: #ff7b5b;
-    cursor: pointer;
-}
-
-.container .rgt{
-    justify-content: right;
-    padding-right: 20px;
-}
-.container .rgt p {
-    list-style: none;
-    display: flex;
-    margin-top: 30px;
-}
-.container .rgt a{
-    text-decoration: none;
-    color: #ffff;
-    padding-left: 60px;
-    
-}
-/* .right p{
-    text-align: right;
-    padding-left: 70px;
-    font-weight: bold;
-} */
-.rgt p a:hover{
-    cursor: pointer;
-    text-shadow: aqua;
-    font-size: larger;
+.navbar a:hover {
+    color: #ff7b5b;
+    text-shadow: 0px 0px 8px #ff7b5b;
+    transform: scale(1.1);
 }
 
 
@@ -123,7 +153,7 @@
 }
 
 #menu{
-    margin-top: 30px;
+    padding-top: 30px;
     color: #000000;
     text-align: center;
 }
@@ -155,14 +185,73 @@
     font-size: 2rem;
 }
 
-#contact{
-    color: grey;
-    background: #000;
-    padding: 15px 40px 15px 40px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    font-size: 1.3rem;
+/* Contact Section */
+#contact {
+    background: #f8f8f8;
+    padding: 50px 20px;
+    text-align: center;
 }
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-family: "Caveat Brush", cursive;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Contact Box */
+.contact-box {
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.contact-box i {
+    font-size: 2rem;
+    color: #ff7b5b;
+    margin-bottom: 10px;
+}
+
+.contact-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.contact-box p {
+    font-size: 1rem;
+    color: #444;
+}
+
+/* Hover Effect */
+.contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-box {
+        width: 90%;
+    }
+}
+
 
 .copy p{
     padding: 5px 0px 5px 0px;
@@ -170,3 +259,13 @@
     background: #000;
     color: white;
 }
+
+
+  
+/* Footer */
+/* .copy {
+    text-align: center;
+    padding: 10px;
+    background: black;
+    color: white;
+} */
